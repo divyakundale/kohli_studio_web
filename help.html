@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Help</title>
+<meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  
+  
+  
+</head>
+<style type="text/css">
+  body{
+    padding:0;
+    margin:0;
+  }
+  input{
+    padding: 10px;
+    padding-right: 1
+    background-color: #fff;
+    border-radius: 10px;
+
+  }
+  code {
+  //background: #2db34a;
+  border-radius: 6px;
+  //color: #fff;
+  display: block;
+  font: 14px/24px "Source Code Pro", Inconsolata, "Lucida Console", Terminal, "Courier New", Courier;
+  padding: 24px 15px;
+  text-align: center;
+}
+header,
+section,
+aside,
+footer {
+  //margin: 0 1.5% 24px 1.5%;
+}
+.sse section {
+  float: left;
+  width: 30%;
+  padding-top: 30px;
+}
+.sse p{
+  font-size: 18px;
+}
+
+footer {
+  clear: both;
+  margin-bottom: 0;
+}
+body {
+ // background: #71AFFF;
+ }
+.call-animation {
+    background: #fff;
+    width: 135px;
+    height: 135px;
+    position: relative;
+    margin: 0 auto;
+    border-radius: 100%;
+    border: solid 5px #fff;
+    animation: play 2s ease infinite;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    backface-visibility: hidden;
+  
+}
+.call-animation img {
+        width: 135px;
+        height: 135px;
+        border-radius: 100%;
+        position: absolute;
+        left: 0px;
+        top: 0px;
+    }
+
+
+
+@keyframes play {
+
+    0% {
+        transform: scale(1);
+    }
+    15% {
+        box-shadow: 0 0 0 5px rgba(164, 245, 66, 0.4);
+    }
+    25% {
+        box-shadow: 0 0 0 10px rgba(164, 245, 66, 0.4), 0 0 0 20px rgba(164, 245, 66, 0.2);
+    }
+    25% {
+        box-shadow: 0 0 0 15px rgba(164, 245, 66, 0.4), 0 0 0 30px rgba(164, 245, 66, 0.2);
+    }
+
+}
+.last{
+margin: 100px;
+font-size: 18px;
+}
+
+.cont{
+  margin: 100px;
+}
+.table,th,tr,td{
+border:1px solid lightblue;
+width: 100%;
+height: 100%;
+//padding-left: 100px;
+text-align: center;
+
+}
+
+th,tr,td{
+  padding: 10px;
+}
+</style>
+
+<body>
+
+
+
+<section>
+
+<div style="float: left; margin-left: 50px; margin-top: 50px;">
+  <a href="index.html">  Home</a>
+</div>
+ <div style="background-color: rgb(153, 204, 255); padding: 20px;text-align: center; ">
+
+ 
+  <h4>Kohli Help Center</h4>
+   <h2> How can We Help you?</h2>
+  <div style="  " class="tab" >
+    <input type="textarea" name="text" id="question" placeholder ="Type your question"  >
+    <button  onclick="add();"  style="padding: 10px;">Add</button>
+  </div> 
+  
+ </div>
+
+</section>
+
+
+
+
+
+
+
+
+<section class="sse">
+<section>
+  <code>checkout
+    <p>How to Conatct Us  &phone;</p> </code>
+    <div class="call-animation">
+<img class="img-circle" src="k.jpg" alt="" width="135"/>
+
+</div><code><p>+91-6280848783</p></code>
+</section>
+
+<section>
+  <code>payment
+    <p>Cart & Payment</p>
+  <div><img class="img-circle" style="height: 180px;"src="credit-card.png"></div><p>You can pay online by using any app . After conatcting we give you all details about it.</p></code>
+ 
+</section>
+
+<section>
+  <code>user
+    <p>Requirements</p>
+   <div><img class="img-circle" style="height: 180px;"src="description.png"></div></code>
+   <code><p>User should know Terms and condition.</p>
+    <p></p></code>
+</section>
+     
+  </section> 
+
+  
+    <div class="last">
+      <p>
+      <h2>  Terms and Conditions for Kohli Production</h2>
+<h4>Introduction</h4>
+These Website Standard Terms and Conditions written on this webpage shall manage your use of our website, Webiste Name accessible at comapany link
+<br>
+These Terms will be applied fully and affect to your use of this Website. By using this Website, you agreed to accept all terms and conditions written in here. You must not use this Website if you disagree with any of these Website Standard Terms and Conditions.
+<br>
+<br>
+<h4>Intellectual Property Rights</h4>
+Other than the content you own, under these Terms, Company Name and/or its licensors own all the intellectual property rights and materials contained in this Website.<br>
+
+You are granted limited license only for purposes of viewing the material contained on this Website.<br><br>
+
+<h4>Restrictions</h4>
+You are specifically restricted from all of the following:
+
+<br><br>
+<h4>Assignment</h4>
+The Company Name is allowed to assign, transfer, and subcontract its rights and/or obligations under these Terms without any notification. However, you are not allowed to assign, transfer, or subcontract any of your rights and/or obligations under these Terms.<br><br>
+
+<h4>Entire Agreement</h4>
+These Terms constitute the entire agreement between Company Name and you in relation to your use of this Website, and supersede all prior agreements and understandings.
+
+      </p>
+    </div>
+    <section class="cont">
+      
+
+<div >
+  <div class="tab tab-1" id="registration-table">
+<h2>FAQ</h2>
+  <table id="table" >
+
+    <tr>
+      
+      <th>Question</th>
+      <th >Date</th>
+      
+    </tr>
+    
+    
+  </table>
+    </div>
+  </div>
+    </section>
+    <h3>Thank you for reading our Terms and Conditions.</h3>
+
+
+   
+</body>
+
+  
+
+
+  <script type="text/javascript">
+  function add(){
+
+
+
+    
+    
+        var table =document.getElementById("table"),
+      newRow=table.insertRow(table.length),
+
+
+        cell1=newRow.insertCell(0),
+        cell2=newRow.insertCell(1),
+      
+  
+      
+      
+ question= document.getElementById('question').value;
+       
+
+    cell1.innerHTML =question;
+      cell2.innerHTML = dateTime;   
+      
+
+    
+  
+      
+
+    
+   
+      
+    
+    
+alert("Succefully added question.Thank you for sharing doubts. We consider your issue.");
+
+  }
+     table = document.getElementById("table");
+
+ var today = new Date();
+ var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
+ var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();   //calculate current date and time
+ var dateTime = date+' '+time;
+
+</script>
+
+</script>
+</html>

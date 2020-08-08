@@ -1,0 +1,79 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Quiz</title>
+
+        <meta name="viewport" content="width=device-width"/>
+        <script src="https://unpkg.com/jquery"></script>
+        <script src="https://surveyjs.azureedge.net/1.7.25/survey.jquery.js"></script>
+        <link href="https://surveyjs.azureedge.net/1.7.25/modern.css" type="text/css" rel="stylesheet"/>
+        <link rel="stylesheet" href="./index.css">
+
+    </head>
+    <body>
+
+        <div id="surveyElement" style="display:inline-block;width:100%;"></div>
+        <div id="surveyResult"></div>
+
+        <script type="text/javascript" src="./index.js"></script>
+
+
+   
+
+
+
+    </body>
+    <script type="text/javascript">
+        
+        Survey
+    .StylesManager
+    .applyTheme("modern");
+
+var json = {
+    questions: [
+        {
+            type: "checkbox",
+            name: "Interest",
+            title: "Choose the options which you like / qualities you have. ",
+            isRequired: true,
+            hasNone: true,
+            colCount: 4,
+            choices: [
+                "Design",
+                "Drawing",
+                "Coding",
+                "Leadership",
+                "Logo Design",
+                "Want invitation card",
+                
+                "Want to Join kohli group"
+            ]
+        }
+    ]
+};
+
+window.survey = new Survey.Model(json);
+
+survey
+    .onComplete
+    .add(function (result) {
+        document
+            .querySelector('#surveyResult')
+            .textContent = "Result\n" + JSON.stringify(result.data, null, 3);
+    });
+
+
+
+    if(json)
+    {
+        alert('Welcome to Quiz');
+    }
+
+$("#surveyElement").Survey({model: survey});
+
+
+
+    </script>
+</html>
