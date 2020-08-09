@@ -10,6 +10,8 @@
 </head>
 <style type="text/css">
   body{
+    font-family: "Open Sans", sans-serif;
+  color: #444444;
     padding:0;
     margin:0;
   }
@@ -21,11 +23,12 @@
 
   }
   code {
+     font-family: "Open Sans", sans-serif;
   //background: #2db34a;
   border-radius: 6px;
   //color: #fff;
   display: block;
-  font: 14px/24px "Source Code Pro", Inconsolata, "Lucida Console", Terminal, "Courier New", Courier;
+  
   padding: 24px 15px;
   text-align: center;
 }
@@ -47,6 +50,7 @@ footer {
 footer {
   clear: both;
   margin-bottom: 0;
+
 }
 body {
  // background: #71AFFF;
@@ -77,6 +81,7 @@ body {
 
 
 
+
 @keyframes play {
 
     0% {
@@ -93,8 +98,11 @@ body {
     }
 
 }
+
 .last{
-margin: 100px;
+  margin-top: 100px;
+  margin-left: 80px;
+   margin-right: 80px;
 font-size: 18px;
 }
 
@@ -102,17 +110,61 @@ font-size: 18px;
   margin: 100px;
 }
 .table,th,tr,td{
-border:1px solid lightblue;
+border:2px solid black;
 width: 100%;
 height: 100%;
 //padding-left: 100px;
 text-align: center;
+font-size: 20px;
 
+
+}
+table{
+  box-shadow: 2px 2px 10px grey;
 }
 
 th,tr,td{
   padding: 10px;
 }
+
+
+#question{
+  height: 30px;
+  width: 400px;
+  border-radius: 20px;
+}
+.tab button{
+background-color: black;
+color:#fff;
+padding: 15px;
+border-radius: 20px;
+}
+
+img { max-width: 100%; height:auto;  }
+
+.a a{float: left; margin-left: 50px; margin-top: 50px;
+text-decoration: none;
+height: 20px;width: 40px;
+background-color: lightblue;
+text-align: center;
+border-radius: 10px;
+padding:  5px;
+//box-shadow: 2px 2px 5px blue;}
+.a a:hover{
+  box-shadow: 2px 2px 5px blue;
+}
+
+.foot{
+  text-align: center; color: #fff;
+  background-color: black;
+  padding:20px;
+
+}
+.img-circle {
+padding: 10px;
+}
+
+
 </style>
 
 <body>
@@ -121,17 +173,18 @@ th,tr,td{
 
 <section>
 
-<div style="float: left; margin-left: 50px; margin-top: 50px;">
+<div class="a">
   <a href="index.html">  Home</a>
 </div>
- <div style="background-color: rgb(153, 204, 255); padding: 20px;text-align: center; ">
+ <div style="background-size: cover; 
+ background-image: url('spruce-paint-color-swatch-benjamin-moore-breath-of-fresh-air-88393501d53a416e9ce6f819948c6daa.png');  padding-top:20px;padding-bottom: 20px;text-align: center; ">
 
  
-  <h4>Kohli Help Center</h4>
-   <h2> How can We Help you?</h2>
+  <h3 style="padding-right: 80px;">Kohli Help Center</h3>
+   <h2> Need some help?</h2>
   <div style="  " class="tab" >
     <input type="textarea" name="text" id="question" placeholder ="Type your question"  >
-    <button  onclick="add();"  style="padding: 10px;">Add</button>
+    <button  onclick="add();" >Add</button>
   </div> 
   
  </div>
@@ -142,7 +195,7 @@ th,tr,td{
 
 
 
-
+<main>
 
 
 <section class="sse">
@@ -150,32 +203,35 @@ th,tr,td{
   <code>checkout
     <p>How to Conatct Us  &phone;</p> </code>
     <div class="call-animation">
-<img class="img-circle" src="k.jpg" alt="" width="135"/>
+<img class="" src="k.jpg" alt="" width="135"/>
 
-</div><code><p>+91-6280848783</p></code>
+</div><code><p>+91-6280848783
+
+<br> US: +1-347-632-8098
+<br>+91-9988445896 </p></code>
 </section>
 
 <section>
   <code>payment
     <p>Cart & Payment</p>
-  <div><img class="img-circle" style="height: 180px;"src="credit-card.png"></div><p>You can pay online by using any app . After conatcting we give you all details about it.</p></code>
+  <div><img class="img-circle" style="height: 160px;"src="credit-card.png"></div><p>You can pay online by using any app . After conatcting we give you all details about it.</p></code>
  
 </section>
 
 <section>
   <code>user
     <p>Requirements</p>
-   <div><img class="img-circle" style="height: 180px;"src="description.png"></div></code>
-   <code><p>User should know Terms and condition.</p>
+   <div><img class="img-circle" style="height: 115px;"src="description.png"></div></code>
+   <code><p>User should know Terms and condition and accepted it.</p><br>
     <p></p></code>
-</section>
-     
+</section></section>
+  
   </section> 
 
-  
+    <section >
     <div class="last">
-      <p>
-      <h2>  Terms and Conditions for Kohli Production</h2>
+    
+      <h2>  Terms and Conditions for Kohli Production</h2>  <p>
 <h4>Introduction</h4>
 These Website Standard Terms and Conditions written on this webpage shall manage your use of our website, Webiste Name accessible at comapany link
 <br>
@@ -198,13 +254,14 @@ The Company Name is allowed to assign, transfer, and subcontract its rights and/
 These Terms constitute the entire agreement between Company Name and you in relation to your use of this Website, and supersede all prior agreements and understandings.
 
       </p>
-    </div>
+    </div></section>
+    
     <section class="cont">
       
 
 <div >
   <div class="tab tab-1" id="registration-table">
-<h2>FAQ</h2>
+<h1 style="text-align: center;">FAQ</h1>
   <table id="table" >
 
     <tr>
@@ -213,14 +270,22 @@ These Terms constitute the entire agreement between Company Name and you in rela
       <th >Date</th>
       
     </tr>
+     <tr>
+      
+      <td>I don't know how to contact you.</th>
+      <td >2020-8-9 12:24:35</th>
+      
+    </tr>
     
     
   </table>
     </div>
-  </div>
-    </section>
-    <h3>Thank you for reading our Terms and Conditions.</h3>
+  </div >
+    </section ></main>
 
+    <section class="foot">
+    <h3  >Thank you for reading our Terms and Conditions.</h3>
+</section>
 
    
 </body>
