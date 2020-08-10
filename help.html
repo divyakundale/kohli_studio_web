@@ -1,13 +1,17 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Help</title>
-<meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  
-  
-  
+  <title>Help Center</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
+
+
+
+
 <style type="text/css">
   body{
     font-family: "Open Sans", sans-serif;
@@ -16,36 +20,13 @@
     margin:0;
   }
   input{
-    padding: 10px;
+    padding: 20px;
     padding-right: 1
     background-color: #fff;
-    border-radius: 10px;
+    border-radius: px;
 
   }
-  code {
-     font-family: "Open Sans", sans-serif;
-  //background: #2db34a;
-  border-radius: 6px;
-  //color: #fff;
-  display: block;
-  
-  padding: 24px 15px;
-  text-align: center;
-}
-header,
-section,
-aside,
-footer {
-  //margin: 0 1.5% 24px 1.5%;
-}
-.sse section {
-  float: left;
-  width: 30%;
-  padding-top: 30px;
-}
-.sse p{
-  font-size: 18px;
-}
+ 
 
 footer {
   clear: both;
@@ -100,15 +81,10 @@ body {
 }
 
 .last{
-  margin-top: 100px;
-  margin-left: 80px;
-   margin-right: 80px;
+ margin: 80px;
 font-size: 18px;
 }
 
-.cont{
-  margin: 100px;
-}
 .table,th,tr,td{
 border:2px solid black;
 width: 100%;
@@ -131,25 +107,28 @@ th,tr,td{
 #question{
   height: 30px;
   width: 400px;
-  border-radius: 20px;
+  border-radius: 0px;
+  box-shadow: 10px 10px 10px 0px grey;
 }
 .tab button{
+   box-shadow: 10px 10px 10px 0px grey;
 background-color: black;
 color:#fff;
-padding: 15px;
-border-radius: 20px;
+padding: 10px;
+border-radius: 0px;
 }
 
 img { max-width: 100%; height:auto;  }
 
-.a a{float: left; margin-left: 50px; margin-top: 50px;
+.a a{float: left; 
 text-decoration: none;
-height: 20px;width: 40px;
+
 background-color: lightblue;
 text-align: center;
-border-radius: 10px;
-padding:  5px;
-//box-shadow: 2px 2px 5px blue;}
+border-radius: 5px;
+padding:  10px;
+}
+
 .a a:hover{
   box-shadow: 2px 2px 5px blue;
 }
@@ -164,23 +143,57 @@ padding:  5px;
 padding: 10px;
 }
 
+.col{
+  text-align: center;
+  padding-top: 20px;
+}
+.col{
+  background-color: rgb(235, 245, 243);
+  border-radius: 20px;
+  margin:  10px;
+ // color: #fff;
+ font-size: 16px;
+ height: 400px;
+}
+.col:hover{
+  box-shadow: 2px 2px 20px grey;
+    -webkit-transition: all 1s ease;
+  transition: all 0.5s ease;
+}
+.row img{
+  height: 150px;
+  margin: 20px;
+}
+h2{
+  text-align: center;
+}
 
+.row{
+  margin: 20px;
+}
+.cont{
+  margin: 50px;
+ 
+}
 </style>
 
 <body>
 
+<div class="container-fluid" >
+ 
 
+  <div class="a">
+  <a href="index.html" >  Home</a>
+  <a  onclick="home();" >  Help </a>
+  <a onclick="faq();">  FAQ's</a>
 
-<section>
-
-<div class="a">
-  <a href="index.html">  Home</a>
 </div>
- <div style="background-size: cover; 
+
+ <div class="g" style="background-size: cover; 
  background-image: url('spruce-paint-color-swatch-benjamin-moore-breath-of-fresh-air-88393501d53a416e9ce6f819948c6daa.png');  padding-top:20px;padding-bottom: 20px;text-align: center; ">
 
  
-  <h3 style="padding-right: 80px;">Kohli Help Center</h3>
+  <h3 >Kohli Help Center</h3>
    <h2> Need some help?</h2>
   <div style="  " class="tab" >
     <input type="textarea" name="text" id="question" placeholder ="Type your question"  >
@@ -188,50 +201,54 @@ padding: 10px;
   </div> 
   
  </div>
-
-</section>
-
-
-
-
-
-<main>
-
-
-<section class="sse">
-<section>
-  <code>checkout
-    <p>How to Conatct Us  &phone;</p> </code>
-    <div class="call-animation">
-<img class="" src="k.jpg" alt="" width="135"/>
-
-</div><code><p>+91-6280848783
-
-<br> US: +1-347-632-8098
-<br>+91-9988445896 </p></code>
-</section>
-
-<section>
-  <code>payment
-    <p>Cart & Payment</p>
-  <div><img class="img-circle" style="height: 160px;"src="credit-card.png"></div><p>You can pay online by using any app . After conatcting we give you all details about it.</p></code>
  
-</section>
+<section id="home">
+  <div class="row">
 
-<section>
-  <code>user
+     <div class="col-sm-9 col-md-6 col-lg-4" ><div class="col">
+      
+     <p>checkout
+      <p>How to Conatct Us  &phone;</p> </p>
+
+        <img class="call-animation" class="" src="k.jpg" alt="" width="135"/>
+
+        <p>+91-6280848783
+
+        <br> US: +1-347-632-8098
+        <br>+91-9988445896 </p>
+
+</div></div>
+
+    <div class="col-sm-3 col-md-6 col-lg-4" ><div class="col">
+      
+
+      <p>payment </p>
+    <h5>Cart & Payment</h5>
+  <img  src="credit-card.png"><p>You can pay online by using any app .<br> After conatcting we give <br>you all details about it.
+      </p>
+    </div></div>
+
+    <div class="col-sm-9 col-md-6 col-lg-4" ><div class="col">
+      
+      
+      <p>user</p>
     <p>Requirements</p>
-   <div><img class="img-circle" style="height: 115px;"src="description.png"></div></code>
-   <code><p>User should know Terms and condition and accepted it.</p><br>
-    <p></p></code>
-</section></section>
-  
-  </section> 
+   <img class="ig-circle" src="description.png">
+   <p>User should know Terms and <br>condition and accepted it.</p><br></div>
 
-    <section >
-    <div class="last">
+
+
+    </div>
+  
+
+
     
-      <h2>  Terms and Conditions for Kohli Production</h2>  <p>
+   
+  </div>
+ 
+    <div class="last" >
+    
+      <h2>  Terms and Conditions for Kohli Production</h2><hr>  <p>
 <h4>Introduction</h4>
 These Website Standard Terms and Conditions written on this webpage shall manage your use of our website, Webiste Name accessible at comapany link
 <br>
@@ -253,15 +270,20 @@ The Company Name is allowed to assign, transfer, and subcontract its rights and/
 <h4>Entire Agreement</h4>
 These Terms constitute the entire agreement between Company Name and you in relation to your use of this Website, and supersede all prior agreements and understandings.
 
-      </p>
-    </div></section>
+      </p></div>
+
+
+    </section>
     
-    <section class="cont">
+    
       
 
-<div >
-  <div class="tab tab-1" id="registration-table">
-<h1 style="text-align: center;">FAQ</h1>
+  
+  
+
+<section  class="cont" id="faq" style="display: none;">
+  <div class="tab tab-1" >
+  <h1 style="text-align: center;">FAQ's</h1><br>
   <table id="table" >
 
     <tr>
@@ -281,10 +303,10 @@ These Terms constitute the entire agreement between Company Name and you in rela
   </table>
     </div>
   </div >
-    </section ></main>
+    </section >
 
     <section class="foot">
-    <h3  >Thank you for reading our Terms and Conditions.</h3>
+    <h5  >Thank you for reading our Terms and Conditions.</h5>
 </section>
 
    
@@ -336,7 +358,34 @@ alert("Succefully added question.Thank you for sharing doubts. We consider your 
  var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();   //calculate current date and time
  var dateTime = date+' '+time;
 
-</script>
 
-</script>
+
+
+
+
+
+
+function home() {
+  var x = document.getElementById("home");
+  var y = document.getElementById("faq");
+  
+    
+    x.style.display  ="block";
+    y.style.display = "none";
+   
+}
+
+function faq() {
+  var a = document.getElementById("faq");
+  var b = document.getElementById("home");
+  
+
+   a.style.display ="block";
+   b.style.display = "none";
+  
+}
+  
+
+</script>  
+</body>
 </html>
