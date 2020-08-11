@@ -6,14 +6,11 @@
         <title>Quiz</title>
 <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
 
-
+ <link href="assets/css/style.css" rel="stylesheet">
     </head>
     <style type="text/css">
  body{
-   //background-image: url('quiz.jpg');
-  // background-color: rgb(7, 10, 10);
-  //  background-repeat: no-repeat;
-    //background-size: cover;
+  
     color: #fff;
  background: #4ECDC4;  /* fallback for old browsers */
 background: -webkit-linear-gradient(to right, #556270, #4ECDC4);  /* Chrome 10-25, Safari 5.1-6 */
@@ -42,6 +39,18 @@ color: #f1f1f1;
 
     </style>
     <body>
+
+ <header id="header" class="fixed-top d-flex align-items-center">
+    <div class="container d-flex align-items-center">
+
+    <nav class="nav-menu d-none d-lg-block">
+        <ul>
+          <li class="active"><a href="index.html" style="color: #fff;">Home</a></li>
+           
+        </ul>
+      </nav>
+</div>
+  </header>
 
         <div id="surveyElement" style="display:inline-block;width:100%;"></div>
         <div id="surveyResult"></div>
